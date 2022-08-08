@@ -7,11 +7,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @ToString
-@Document(collection="client_person")
+@Document(collection="legal_representative")
 public class LegalRepresentative {
 
     @Id
     private String id;
+    private String code;
     private String codeClient;
     private String codePerson;
     private boolean state;
