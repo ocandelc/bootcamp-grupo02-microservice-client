@@ -1,7 +1,7 @@
 /**
  * Resumen.
  * Objeto                   : Client.java
- * Descripción              : Clase para obtener los datos del cliente.
+ * Descripción              : Clase para obtener los datos de la clase Client.
  * Fecha de Creación        : 04/08/2022.
  * Proyecto de Creación     : Bootcamp-01.
  * Autor                    : Marvin Castro.
@@ -20,7 +20,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * Clase de tipo document para obtener o establecer los datos en cada atributo.
+ * Clase de tipo document para obtener o establecer los datos de cada atributo.
  */
 @Data
 @ToString

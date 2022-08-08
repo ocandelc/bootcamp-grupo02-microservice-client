@@ -65,7 +65,7 @@ public class ClientServiceImpl implements ClientService {
 
     /**
      * Método que realiza la acción borrar datos del document
-     * @return Mono retorna el Client, tipo Mono
+     * @return Mono retorna el Void, tipo Mono
      */
     @Override
     public Mono<Void> delete(String id) {
