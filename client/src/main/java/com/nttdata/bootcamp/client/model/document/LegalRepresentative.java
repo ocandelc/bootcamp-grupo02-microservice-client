@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @ToString
 @Document(collection="client_person")
-public class ClientPerson {
+public class LegalRepresentative {
 
     @Id
     private String id;
