@@ -28,34 +28,59 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/api/clienttypes")
 public class ClientTypeController {
 
+    /** Declaración de la clase service */
     @Autowired
     private ClientTypeService clientTypeService;
 
+    /**
+     * Método que realiza la acción insertar datos del document
+     * @return Mono retorna el ClientType, tipo Mono
+     */
     @PostMapping
     public Mono<ClientType> create(@RequestBody ClientType clientType){
         return this.clientTypeService.insert(clientType);
     }
 
+    /**
+     * Método que realiza la acción actualizar datos del document
+     * @return Mono retorna el ClientType, tipo Mono
+     */
     @PutMapping
     public Mono<ClientType> update(@RequestBody ClientType clientType){
         return this.clientTypeService.update(clientType);
     }
 
+    /**
+     * Método que realiza la acción borrar datos del document
+     * @return Mono retorna el Void, tipo Mono
+     */
     @DeleteMapping("/{id}")
     public Mono<Void> delete(@PathVariable String id) {
         return this.clientTypeService.delete(id);
     }
 
+    /**
+     * Método que realiza la acción buscar datos por id del document
+     * @return Mono retorna el ClientType, tipo String
+     */
     @GetMapping("/{id}")
     public Mono<ClientType> find(@PathVariable String id) {
         return this.clientTypeService.find(id);
     }
 
+    /**
+     * Método que realiza la acción buscar datos por código del document
+     * @return Mono retorna el ClientType, tipo String
+     */
     @GetMapping("/findByCode/{code}")
     public Mono<ClientType> findByCode(@PathVariable String code) {
         return this.clientTypeService.findByCode(code);
     }
 
+    /**
+     * Método que realiza la acción buscar todos los datos del document
+     * @return Mono retorna el ClientType, tipo String
+     */
     @GetMapping
     public Flux<ClientType> findAll() {
         return this.clientTypeService.findAll();

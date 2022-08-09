@@ -52,7 +52,7 @@ public class ClientController {
 
     /**
      * Método que realiza la acción borrar datos del document
-     * @return Mono retorna el Client, tipo Mono
+     * @return Mono retorna el Void, tipo Mono
      */
     @DeleteMapping("/{id}")
     public Mono<Void> delete(@PathVariable String id) {
