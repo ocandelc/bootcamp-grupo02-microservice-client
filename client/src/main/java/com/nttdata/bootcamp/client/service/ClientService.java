@@ -17,7 +17,7 @@ package com.nttdata.bootcamp.client.service;
 import com.nttdata.bootcamp.client.model.document.Client;
 
 /**
- * Clase de interface servicio para los métodos CRUD.
+ * Clase para los métodos de la interface de servicio del cliente.
  */
 public interface ClientService extends GenericService<Client, String> {
 

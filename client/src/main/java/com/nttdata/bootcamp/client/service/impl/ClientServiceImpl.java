@@ -25,7 +25,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
- * Clase de implementación servicio para los métodos CRUD.
+ * Clase para los métodos de la implemetnación de servicio del cliente.
  */
 @Service
 public class ClientServiceImpl implements ClientService {
