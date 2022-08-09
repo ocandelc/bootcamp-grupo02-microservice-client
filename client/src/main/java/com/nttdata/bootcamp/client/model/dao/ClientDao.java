@@ -1,7 +1,7 @@
 /**
  * Resumen.
  * Objeto                   : ClientDao.java
- * Descripción              : Clase para los métodos de la interface de dao del cliente.
+ * Descripción              : Clase de interface dao para obtener los datos de la base de datos.
  * Fecha de Creación        : 04/08/2022.
  * Proyecto de Creación     : Bootcamp-01.
  * Autor                    : Marvin Castro.
