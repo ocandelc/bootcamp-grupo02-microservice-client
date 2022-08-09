@@ -1,7 +1,7 @@
 /**
  * Resumen.
  * Objeto                   : Client.java
- * Descripción              : Clase para obtener los datos de la clase LegalRepresentative.
+ * Descripción              : Clase de tipo document para obtener o establecer los datos de cada atributo.
  * Fecha de Creación        : 04/08/2022.
  * Proyecto de Creación     : Bootcamp-01.
  * Autor                    : Marvin Castro.
