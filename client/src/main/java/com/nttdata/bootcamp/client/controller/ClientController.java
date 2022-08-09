@@ -1,7 +1,7 @@
 /**
  * Resumen.
  * Objeto                   : ClientController.java
- * Descripción              : Clase para los métodos de rest api del cliente.
+ * Descripción              : Clase de controladora para invocar a métodos CRUD con rest api.
  * Fecha de Creación        : 04/08/2022.
  * Proyecto de Creación     : Bootcamp-01.
  * Autor                    : Marvin Castro.
@@ -22,7 +22,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
- * Clase de controladora para invocar método CRUD a través de request.
+ * Clase de controladora para invocar a métodos CRUD con rest api.
  */
 @RestController
 @RequestMapping("/api/clients")
@@ -79,7 +79,7 @@ public class ClientController {
 
     /**
      * Método que realiza la acción buscar todos los datos del document
-     * @return Mono retorna el Client, tipo String
+     * @return Flux retorna el Client, tipo Flux
      */
     @GetMapping
     public Flux<Client> findAll() {
