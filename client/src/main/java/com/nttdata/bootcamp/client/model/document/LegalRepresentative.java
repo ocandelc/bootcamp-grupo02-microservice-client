@@ -32,7 +32,7 @@ public class LegalRepresentative {
     private String id;
 
     /** Código de la relación del Representante Legal con Cliente */
-    private String code;
+    /*private String code;*/
 
     /** Código del Cliente */
     private String codeClient;

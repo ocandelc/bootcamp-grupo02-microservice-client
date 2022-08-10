@@ -52,8 +52,8 @@ public interface GenericService <T, Id extends Serializable> {
      * Método que realiza la acción buscar datos por código del document
      * @return Mono retorna el T, tipo String
      */
-    Mono<T> findByCode(String code);
-
+    /*Mono<T> findByCode(String code);
+*/
     /**
      * Método que realiza la acción buscar todos los datos del document
      * @return Mono retorna el T, tipo String

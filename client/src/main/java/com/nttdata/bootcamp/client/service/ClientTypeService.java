@@ -15,10 +15,12 @@
 package com.nttdata.bootcamp.client.service;
 
 import com.nttdata.bootcamp.client.model.document.ClientType;
+import reactor.core.publisher.Mono;
 
 /**
  * Clase para los métodos de la interface de servicio del tipo de cliente.
  */
 public interface ClientTypeService extends GenericService<ClientType, String> {
 
+    Mono<ClientType> findByCode(String code);
 }
