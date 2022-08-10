@@ -22,5 +22,9 @@ import reactor.core.publisher.Mono;
  */
 public interface ClientTypeService extends GenericService<ClientType, String> {
 
+    /**
+     * Método que obtiene los datos del document ClientType
+     * @return Mono retorna el ClientType, tipo Mono
+     */
     Mono<ClientType> findByCode(String code);
 }

@@ -21,5 +21,10 @@ import reactor.core.publisher.Mono;
  * Clase para los métodos de la interface de servicio del cliente.
  */
 public interface ClientService extends GenericService<Client, String> {
+
+    /**
+     * Método que obtiene los datos del document Client
+     * @return Mono retorna el Client, tipo Mono
+     */
     Mono<Client> findByCode(String code);
 }
