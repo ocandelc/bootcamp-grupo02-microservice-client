@@ -24,18 +24,21 @@ import org.springframework.data.mongodb.core.mapping.Document;
  */
 @Data
 @ToString
-@Document(collection="client_type")
-public class ClientType {
+@Document(collection="legal_representative")
+public class LegalRepresentative {
 
-    /** Identificador del Tipo Cliente */
+    /** Identificador de la relación del Representante Legal con Cliente */
     @Id
     private String id;
 
-    /** Código del Tipo Cliente */
-    private String code;
+    /** Código de la relación del Representante Legal con Cliente */
+    /*private String code;*/
 
-    /** Nombre del Cliente */
-    private String name;
+    /** Código del Cliente */
+    private String codeClient;
+
+    /** Código de la Persona */
+    private String codePerson;
 
     /** Estado del registro */
     private boolean state;
